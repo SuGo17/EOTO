@@ -1,0 +1,77 @@
+.nav-bar {
+  position: static;
+}
+
+/*----------------------------------------------------contact---------------------------------------------------------------------------*/
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8rem 15rem;
+}
+.contact-left {
+  width: 50%;
+}
+.contact-left img {
+  width: 85%;
+}
+.contact-right {
+  width: 37%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 500px 25px #d8e9fab2;
+}
+.contact-title {
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #fff;
+  background: #08bd80;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 4rem;
+  width: 100%;
+  background: #fff;
+}
+.form-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+.form-box input {
+  height: 3rem;
+  margin-top: 0.25rem;
+  padding: 0.5rem;
+}
+textarea {
+  resize: none;
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+}
+input:focus,
+textarea:focus {
+  outline: 2px solid #08bd80;
+  border: 1px solid #08bd80;
+}
+.message {
+  align-self: flex-start;
+}
+.form-btn {
+  padding: 0.75rem 6rem;
+  color: #fff;
+  font-size: 1.5rem;
+  background: #08bd80;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}

@@ -1,0 +1,221 @@
+/*------------------------------------learn-section--------------------------------------------------------------*/
+.learn,
+.teach {
+  display: flex;
+  justify-content: space-between;
+  padding: 10rem 15rem;
+  border-top: 1.5px solid #8888884f;
+}
+.teach {
+  align-items: center;
+}
+.learn-left,
+.teach-left {
+  display: flex;
+  flex-direction: column;
+  margin-top: 8rem;
+}
+.teach-left {
+  margin-top: 0rem;
+}
+.learn-title,
+.teach-title {
+  font-size: 5rem;
+  font-weight: 400;
+  word-spacing: 5px;
+  letter-spacing: 1px;
+  margin-bottom: 2.5rem;
+  color: #444;
+}
+.skewed {
+  position: relative;
+  z-index: 5;
+  color: #fff;
+}
+.skewed::before {
+  content: " ";
+  width: 100%;
+  height: 100%;
+  background: #08bd81c0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transform: scale(1.1, 0.9) skew(-20deg);
+}
+.skewed-right::before {
+  transform: scale(1.1, 0.9) skew(20deg);
+}
+.benefits,
+.conditions {
+  list-style: none;
+  color: #444;
+  margin-bottom: 4rem;
+  margin-left: 1rem;
+}
+.benefits li,
+.conditions li {
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+.benefits img,
+.conditions img {
+  width: 1.5rem;
+  margin-right: 1.5rem;
+}
+.learn-btn,
+.teach-btn {
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-left: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  padding: 1rem 2.8rem;
+  min-width: 20rem;
+  color: #eee;
+  background: #08bd81;
+  border: 2px solid #08bd81;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.4s ease-in-out;
+}
+.arrow {
+  font-size: 2rem;
+  margin-left: 0.8rem;
+  width: 0;
+  transition: all 0.4s ease-in-out;
+  color: #fff;
+}
+.learn-btn:hover .arrow,
+.teach-btn:hover .arrow {
+  width: 2.5rem;
+}
+.learn-btn:hover,
+.teach-btn:hover {
+  background: #08bd81;
+  color: #fff;
+}
+.teach-left {
+  order: 2;
+}
+.teach-right {
+  order: 1;
+}
+/*----------------------------------------------Testimonials-----------------------------------------------------*/
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 15rem;
+  border-top: 1.5px solid #8888884f;
+}
+.testimonial-title {
+  font-size: 4rem;
+  font-weight: 500;
+  margin-bottom: 5rem;
+}
+.testimonial-grid {
+  display: grid;
+  max-width: 900px;
+  grid-template-columns: repeat(4, 1fr);
+  /* grid-template-rows: repeat(2, 1fr); */
+  grid-gap: 2rem;
+}
+.grid-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.5rem 2.5rem;
+  border-radius: 1rem;
+  background: #ffffff;
+  font-size: 1.1rem;
+  box-shadow: 0 0 10px 10px #ececec;
+}
+blockquote {
+  font-weight: 400;
+}
+.grid-box1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background: #7541c8;
+  color: #e3e3e3;
+}
+.grid-box2 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  background: #48556a;
+  color: #e3e3e3;
+}
+.grid-box3 {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  color: #444;
+}
+.grid-box4 {
+  color: #444;
+}
+.grid-box5 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  background: #19212e;
+  color: #e3e3e3;
+}
+figcaption {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.75rem;
+  font-size: 1.35rem;
+  font-weight: 500;
+}
+figcaption img {
+  width: 3rem;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+/*----------------------------------------thanks---------------------------------------------------*/
+.reg-thanks {
+  display: none;
+  position: fixed;
+  width: 60%;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 500;
+  padding: 5rem;
+  background: #ecf2f8;
+  color: #444;
+}
+.thanks-left {
+  width: 50%;
+}
+.thanks-left img {
+  width: 90%;
+}
+.thanks-right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.thanks-title {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  font-weight: 600;
+  letter-spacing: 5px;
+}
+.thanks-right p {
+  font-size: 1.5rem;
+  align-self: center;
+  text-align: center;
+  justify-self: center;
+  letter-spacing: 1px;
+}

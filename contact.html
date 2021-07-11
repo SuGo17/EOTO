@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EOTO &nbsp;||&nbsp; Contact Us</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./about.css" />
+  </head>
+  <body>
+    <main>
+      <nav class="nav-bar">
+        <a href="./index.html" class="logo">EOTO</a>
+        <ul>
+          <li><a href="" class="nav-links signup">SIGN UP</a></li>
+          <li><a href="" class="nav-links login">LOGIN</a></li>
+          <li>
+            <a href="./contact.html" class="nav-links active">CONTACT US</a>
+          </li>
+        </ul>
+      </nav>
+      <section class="contact">
+        <div class="contact-left">
+          <img src="./images/Contact-us.png" alt="Contact Us" />
+        </div>
+        <div class="contact-right">
+          <h1 class="contact-title">CONTACT US</h1>
+          <form action="" class="form">
+            <div class="form-box">
+              <label for="#name">Name: </label>
+              <input type="text" id="contact-name" />
+            </div>
+            <div class="form-box">
+              <label for="#email">Email: </label>
+              <input type="email" name="email" id="email" />
+            </div>
+            <div class="form-box">
+              <label for="#message" class="message">Message:</label>
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </div>
+            <button class="form-btn">Submit</button>
+          </form>
+        </div>
+      </section>
+      <footer class="footer">
+        <ul class="footer-left">
+          <li><a href="" class="footer-links">About us</a></li>
+          <li><a href="" class="footer-links">Blog</a></li>
+          <li><a href="" class="footer-links">Privacy policy</a></li>
+          <li><a href="" class="footer-links">Terms and conditions</a></li>
+        </ul>
+        <div class="footer-middle">
+          <p class="copyright">
+            <span>&copy </span>Copyrights by EOTO - Each One Teach One 2021
+          </p>
+        </div>
+        <div class="footer-right">
+          <a href="" class="social-links">
+            <ion-icon name="logo-facebook" class="facebook"></ion-icon>
+          </a>
+          <a href="" class="social-links">
+            <ion-icon name="logo-instagram" class="instagram"></ion-icon>
+          </a>
+          <a href="" class="social-links">
+            <ion-icon name="logo-twitter" class="twitter"></ion-icon>
+          </a>
+          <a href="" class="social-links">
+            <ion-icon name="logo-youtube" class="youtube"></ion-icon>
+          </a>
+        </div>
+      </footer>
+    </main>
+    <section class="signup-login">
+      <div class="sl-title">
+        <h2 class="signup-title">SIGN UP</h2>
+        <h2 class="login-title">LOGIN</h2>
+      </div>
+      <form action="" class="signup-form">
+        <div class="signup-box">
+          <label for="name">Full Name: </label>
+          <input type="text" required id="name" />
+        </div>
+        <div class="signup-box">
+          <label for="s-email ">Email: </label>
+          <input type="email" required id="s-email" />
+        </div>
+        <div class="signup-box">
+          <label for="college">College: </label>
+          <input type="text" required id="college" />
+        </div>
+        <div class="signup-box">
+          <label for="number">Phone No: </label>
+          <input type="number" required id="number" />
+        </div>
+        <div class="signup-box">
+          <label for="s-password">Password: </label>
+          <input type="password" required id="s-password" />
+        </div>
+        <div class="signup-box">
+          <input type="checkbox" required id="checkbox" />
+          <label for="checkbox">
+            I have read all the terms and conditions and agree all of them.
+          </label>
+        </div>
+        <button class="signup-btn">Sign up</button>
+      </form>
+      <form action="" class="login-form">
+        <div class="login-box">
+          <label for="l-email">Email: </label>
+          <input type="email" id="l-email" />
+        </div>
+        <div class="login-box">
+          <label for="l-password">Password:</label>
+          <input type="password" id="l-password" />
+        </div>
+        <div class="login-box">
+          <p>Forgot password? <a href="">click here.</a></p>
+        </div>
+        <button class="login-btn">Login</button>
+      </form>
+    </section>
+    <div class="sl-close"><ion-icon name="close-outline"></ion-icon></div>
+    <div class="overlay"></div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
